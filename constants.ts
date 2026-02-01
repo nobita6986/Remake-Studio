@@ -7,9 +7,9 @@ export const STYLES: Style[] = [
     tooltip: 'Chọn phong cách này, sau đó tải tệp Excel chứa các bối cảnh bạn muốn áp dụng.',
     locked: false,
     imageUrls: [
-      'https://xizital.com/wp-content/uploads/2025/11/C1-1.png',
-      'https://xizital.com/wp-content/uploads/2025/11/C3-1.png',
-      'https://xizital.com/wp-content/uploads/2025/11/C10.png'
+      'https://images.unsplash.com/photo-1509248961158-e54f6934749c', // Gloomy misty figure
+      'https://images.unsplash.com/photo-1605806616949-1e87b487bc2a', // Ghostly figure
+      'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc'  // Dark forest
     ],
     promptTemplate: `**YÊU CẦU QUAN TRỌNG: Chỉ sử dụng hình ảnh tôi cung cấp để lấy thông tin về ngoại hình và trang phục của nhân vật. Toàn bộ bối cảnh, môi trường và hành động phải được tạo ra hoàn toàn dựa trên văn bản prompt sau đây. Không được sao chép hay tái sử dụng bối cảnh từ hình ảnh gốc.**
 
@@ -32,9 +32,9 @@ Chi tiết nhân vật:
     tooltip: 'Chọn phong cách này, sau đó tải tệp Excel chứa các bối cảnh bạn muốn áp dụng.',
     locked: false,
     imageUrls: [
-      'https://xizital.com/wp-content/uploads/2025/11/C1.png',
-      'https://xizital.com/wp-content/uploads/2025/11/C3.png',
-      'https://xizital.com/wp-content/uploads/2025/11/C2.png'
+      'https://images.unsplash.com/photo-1600603405959-6d623e92445c', // Cinematic lighting portrait
+      'https://images.unsplash.com/photo-1551009175-8a68da93d5f9', // Urban cinematic
+      'https://images.unsplash.com/photo-1497366216548-37526070297c'  // Modern office/cinematic
     ],
     promptTemplate: `YÊU CẦU QUAN TRỌNG: Chỉ sử dụng hình ảnh tôi cung cấp để lấy thông tin về ngoại hình và trang phục của nhân vật. Toàn bộ bối cảnh, môi trường và hành động phải được tạo ra hoàn toàn dựa trên văn bản prompt sau đây. Không được sao chép hay tái sử dụng bối cảnh từ hình ảnh gốc
 
@@ -52,8 +52,9 @@ HƯỚNG DẪN ĐẦU RA: Không viết bất kỳ văn bản, tiêu đề hay m
     tooltip: 'Chọn phong cách này, sau đó tải tệp Excel chứa các bối cảnh bạn muốn áp dụng.',
     locked: false,
     imageUrls: [
-        'https://xizital.com/wp-content/uploads/2025/11/download.png',
-        'https://xizital.com/wp-content/uploads/2025/11/download-1.png'
+        'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b', // Asian temple/moody
+        'https://images.unsplash.com/photo-1528127269322-539801943592', // Vietnam scenery
+        'https://images.unsplash.com/photo-1523526655767-44a7f050e640'  // Floating lights/mystery
     ],
     promptTemplate: `YÊU CẦU QUAN TRỌNG: Chỉ sử dụng hình ảnh tôi cung cấp để lấy thông tin về ngoại hình và trang phục của nhân vật. Toàn bộ bối cảnh, môi trường và hành động phải được tạo ra hoàn toàn dựa trên văn bản prompt sau đây. Không được sao chép hay tái sử dụng bối cảnh từ hình ảnh gốc
 

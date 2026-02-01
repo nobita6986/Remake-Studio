@@ -852,7 +852,7 @@ Prompt viết trong 1 đoạn duy nhất, không được xuống dòng, nếu n
         <div className="container mx-auto">
           <div className="flex flex-wrap justify-between items-center gap-x-6 gap-y-3">
             <h1 onClick={handleResetApp} className="text-2xl font-bold uppercase tracking-wider gradient-text cursor-pointer" title="Đặt lại ứng dụng">
-                X. Image
+                Pro Studio
             </h1>
 
             <div className="flex items-center flex-wrap justify-end gap-2">
