@@ -1,0 +1,5 @@
+{
+  "name": "Tạo ảnh (Remake Studio)",
+  "description": "Create consistent AI images by combining predefined styles with custom contexts and reference character images.",
+  "requestFramePermissions": []
+}

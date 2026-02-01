@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creator Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gradient-start: #059669;
+      --gradient-end: #10B981;
+      --header-bg-image: radial-gradient(ellipse at top, rgba(22, 163, 74, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+    }
+    html.dark {
+      --gradient-start: #34D399;
+      --gradient-end: #A7F3D0;
+      --header-bg-image: radial-gradient(ellipse at top, rgba(22, 163, 74, 0.15) 0%, rgba(2, 10, 6, 0) 70%);
+    }
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .gradient-text {
+			background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+			-webkit-background-clip: text; -webkit-text-fill-color: transparent;
+			background-clip: text; text-fill-color: transparent;
+		}
+    .header-bg {
+      background-image: var(--header-bg-image);
+    }
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-left-color: #34D399;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    html.dark .spinner {
+      border-color: rgba(255, 255, 255, 0.2);
+      border-left-color: #34D399;
+    }
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .input-error {
+      border-color: #F87171 !important; /* red-400 */
+      animation: shake 0.5s;
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+    }
+    .line-clamp-15 {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 15;
+    }
+     /* Basic styles for rendered tables in chat */
+    .chat-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    }
+    .chat-table th, .chat-table td {
+      border: 1px solid #e5e7eb;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    html.dark .chat-table th, html.dark .chat-table td {
+      border-color: #4b5563;
+    }
+    .chat-table th {
+      background-color: #f9fafb;
+    }
+    html.dark .chat-table th {
+      background-color: #1f2937;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.24.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-50 dark:bg-[#020a06] text-gray-800 dark:text-gray-200 transition-colors duration-300">
+<div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
