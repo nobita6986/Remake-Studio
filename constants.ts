@@ -7,9 +7,11 @@ export const STYLES: Style[] = [
     tooltip: 'Chọn phong cách này, sau đó tải tệp Excel chứa các bối cảnh bạn muốn áp dụng.',
     locked: false,
     imageUrls: [
-      'https://images.unsplash.com/photo-1509248961158-e54f6934749c', // Gloomy misty figure
-      'https://images.unsplash.com/photo-1605806616949-1e87b487bc2a', // Ghostly figure
-      'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc'  // Dark forest
+      'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=600&q=80', // Dark Forest
+      'https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=600&q=80', // Gloomy Figure
+      'https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&w=600&q=80', // Mystic
+      'https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=600&q=80', // Dark Mood
+      'https://images.unsplash.com/photo-1505506874110-6a7a69069a08?auto=format&fit=crop&w=600&q=80'  // Spooky
     ],
     promptTemplate: `**YÊU CẦU QUAN TRỌNG: Chỉ sử dụng hình ảnh tôi cung cấp để lấy thông tin về ngoại hình và trang phục của nhân vật. Toàn bộ bối cảnh, môi trường và hành động phải được tạo ra hoàn toàn dựa trên văn bản prompt sau đây. Không được sao chép hay tái sử dụng bối cảnh từ hình ảnh gốc.**
 
@@ -32,9 +34,11 @@ Chi tiết nhân vật:
     tooltip: 'Chọn phong cách này, sau đó tải tệp Excel chứa các bối cảnh bạn muốn áp dụng.',
     locked: false,
     imageUrls: [
-      'https://images.unsplash.com/photo-1600603405959-6d623e92445c', // Cinematic lighting portrait
-      'https://images.unsplash.com/photo-1551009175-8a68da93d5f9', // Urban cinematic
-      'https://images.unsplash.com/photo-1497366216548-37526070297c'  // Modern office/cinematic
+      'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=600&q=80', // High quality portrait
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80', // Clean office
+      'https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=600&q=80', // Business
+      'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80', // Professional
+      'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=80'  // Corporate
     ],
     promptTemplate: `YÊU CẦU QUAN TRỌNG: Chỉ sử dụng hình ảnh tôi cung cấp để lấy thông tin về ngoại hình và trang phục của nhân vật. Toàn bộ bối cảnh, môi trường và hành động phải được tạo ra hoàn toàn dựa trên văn bản prompt sau đây. Không được sao chép hay tái sử dụng bối cảnh từ hình ảnh gốc
 
@@ -52,9 +56,11 @@ HƯỚNG DẪN ĐẦU RA: Không viết bất kỳ văn bản, tiêu đề hay m
     tooltip: 'Chọn phong cách này, sau đó tải tệp Excel chứa các bối cảnh bạn muốn áp dụng.',
     locked: false,
     imageUrls: [
-        'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b', // Asian temple/moody
-        'https://images.unsplash.com/photo-1528127269322-539801943592', // Vietnam scenery
-        'https://images.unsplash.com/photo-1523526655767-44a7f050e640'  // Floating lights/mystery
+        'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=600&q=80', // Rice fields
+        'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=600&q=80', // Temple
+        'https://images.unsplash.com/photo-1599707367072-cd6ad66aa1a8?auto=format&fit=crop&w=600&q=80', // Dragon
+        'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=600&q=80', // Lanterns
+        'https://images.unsplash.com/photo-1557456170-98535e56c592?auto=format&fit=crop&w=600&q=80'  // Lotus/Pond
     ],
     promptTemplate: `YÊU CẦU QUAN TRỌNG: Chỉ sử dụng hình ảnh tôi cung cấp để lấy thông tin về ngoại hình và trang phục của nhân vật. Toàn bộ bối cảnh, môi trường và hành động phải được tạo ra hoàn toàn dựa trên văn bản prompt sau đây. Không được sao chép hay tái sử dụng bối cảnh từ hình ảnh gốc
 
@@ -95,22 +101,82 @@ Màu sắc bối cảnh: Tự nhiên, phong phú, phản ánh đúng màu sắc 
 Bối cảnh của phân cảnh là [A]`
   },
   {
-    title: 'Đang cập nhật',
-    description: 'Coming soon...',
-    tooltip: '',
-    locked: true
+    title: 'Cyberpunk Neon',
+    description: 'Phong cách Sci-fi tương lai với ánh sáng neon rực rỡ, công nghệ cao và không khí đô thị sầm uất.',
+    tooltip: 'Chọn phong cách này cho các bối cảnh tương lai, khoa học viễn tưởng.',
+    locked: false,
+    imageUrls: [
+      'https://images.unsplash.com/photo-1515630278258-407f66498911?auto=format&fit=crop&w=600&q=80', // Cyber city
+      'https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=600&q=80', // Neon rain
+      'https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=600&q=80', // Neon Signs
+      'https://images.unsplash.com/photo-1535378437327-b7149a516c58?auto=format&fit=crop&w=600&q=80', // Robot
+      'https://images.unsplash.com/photo-1605218453259-7df9192f1594?auto=format&fit=crop&w=600&q=80'  // Portrait
+    ],
+    promptTemplate: `YÊU CẦU QUAN TRỌNG: Chỉ sử dụng hình ảnh tôi cung cấp để lấy thông tin về ngoại hình và trang phục của nhân vật. Toàn bộ bối cảnh, môi trường và hành động phải được tạo ra hoàn toàn dựa trên văn bản prompt sau đây. Không được sao chép hay tái sử dụng bối cảnh từ hình ảnh gốc
+
+Hãy vẽ lại nhân vật tôi gửi, với chính xác ngoại hình, trang phục nhưng customize theo phong cách: Cyberpunk, Sci-fi, Futuristic.
+
+Màu sắc: Sử dụng bảng màu Neon rực rỡ (Cyan, Magenta, Purple, Electric Blue) tương phản với màu đen sâu của bóng tối. Ánh sáng nhân tạo từ biển hiệu, đèn LED, hologram.
+
+Không khí: Đô thị tương lai, công nghệ cao, có thể hơi tăm tối (dystopian) hoặc hào nhoáng (utopian).
+
+Chi tiết nhân vật: [CHARACTER_STYLE] + Màu da: Có thể có ánh kim loại hoặc phản chiếu ánh sáng neon. + Phong cách trang phục: Trang phục công nghệ cao (techwear), áo khoác da, các chi tiết phát sáng, phụ kiện kim loại. + Phong cách vẽ mặt nhân vật: Chân thực nhưng có thể thêm các đường nét cybernetic hoặc trang điểm neon.
+
+Bối cảnh của phân cảnh là [A]
+
+HƯỚNG DẪN ĐẦU RA: Không viết bất kỳ văn bản, tiêu đề hay mô tả nào. Toàn bộ phản hồi của bạn phải chỉ là hình ảnh được tạo ra.`
   },
   {
-    title: 'Đang cập nhật',
-    description: 'Coming soon...',
-    tooltip: '',
-    locked: true
+    title: 'Phim Nhựa Cổ Điển',
+    description: 'Phong cách nhiếp ảnh Analog, màu sắc hoài cổ, hạt film (grain), gợi cảm giác ký ức và quá khứ.',
+    tooltip: 'Chọn phong cách này cho các bối cảnh hồi tưởng, lịch sử cận đại.',
+    locked: false,
+    imageUrls: [
+      'https://images.unsplash.com/photo-1495572565679-026049a03195?auto=format&fit=crop&w=600&q=80', // Film grain
+      'https://images.unsplash.com/photo-1517260739337-6799d2df9c72?auto=format&fit=crop&w=600&q=80', // Party
+      'https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&w=600&q=80', // Camera
+      'https://images.unsplash.com/photo-1596525166948-c87bb3c3e6dc?auto=format&fit=crop&w=600&q=80', // Portrait
+      'https://images.unsplash.com/photo-1550926866-92167d32c524?auto=format&fit=crop&w=600&q=80'  // Mood
+    ],
+    promptTemplate: `YÊU CẦU QUAN TRỌNG: Chỉ sử dụng hình ảnh tôi cung cấp để lấy thông tin về ngoại hình và trang phục của nhân vật. Toàn bộ bối cảnh, môi trường và hành động phải được tạo ra hoàn toàn dựa trên văn bản prompt sau đây. Không được sao chép hay tái sử dụng bối cảnh từ hình ảnh gốc
+
+Hãy vẽ lại nhân vật tôi gửi, với chính xác ngoại hình, trang phục nhưng customize theo phong cách: Nhiếp ảnh phim nhựa (Analog Film Photography), Retro, Vintage.
+
+Kỹ thuật: Mô phỏng chất liệu ảnh phim cũ (film grain), độ nhiễu hạt tự nhiên, có thể có vết xước nhẹ hoặc light leak. Tiêu cự mềm mại.
+
+Màu sắc: Màu sắc hơi ngả vàng (sepia) hoặc xanh (cool shift), độ bão hòa thấp (desaturated), mang lại cảm giác hoài cổ, ký ức.
+
+Chi tiết nhân vật: [CHARACTER_STYLE] + Màu da: Tự nhiên nhưng chịu ảnh hưởng của tone màu film. + Phong cách trang phục: Trang phục phù hợp với thời đại (nếu có), texture vải rõ ràng. + Phong cách vẽ mặt nhân vật: Chân thực, cảm xúc lắng đọng.
+
+Bối cảnh của phân cảnh là [A]
+
+HƯỚNG DẪN ĐẦU RA: Không viết bất kỳ văn bản, tiêu đề hay mô tả nào. Toàn bộ phản hồi của bạn phải chỉ là hình ảnh được tạo ra.`
   },
   {
-    title: 'Đang cập nhật',
-    description: 'Coming soon...',
-    tooltip: '',
-    locked: true
+    title: 'Anime Nhật Bản',
+    description: 'Phong cách hoạt hình Nhật Bản hiện đại, màu sắc tươi sáng, ánh sáng lung linh, chi tiết sắc nét.',
+    tooltip: 'Chọn phong cách này cho các câu chuyện trẻ trung, năng động.',
+    locked: false,
+    imageUrls: [
+      'https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=600&q=80', // Anime figure
+      'https://images.unsplash.com/photo-1560972550-aba3456b5564?auto=format&fit=crop&w=600&q=80', // Street
+      'https://images.unsplash.com/photo-1562863777-62a987c9df9f?auto=format&fit=crop&w=600&q=80', // Akihabara
+      'https://images.unsplash.com/photo-1612413156673-983198083c27?auto=format&fit=crop&w=600&q=80', // Art style
+      'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?auto=format&fit=crop&w=600&q=80'  // Aesthetic
+    ],
+    promptTemplate: `YÊU CẦU QUAN TRỌNG: Chỉ sử dụng hình ảnh tôi cung cấp để lấy thông tin về ngoại hình và trang phục của nhân vật. Toàn bộ bối cảnh, môi trường và hành động phải được tạo ra hoàn toàn dựa trên văn bản prompt sau đây. Không được sao chép hay tái sử dụng bối cảnh từ hình ảnh gốc
+
+Hãy vẽ lại nhân vật tôi gửi, với chính xác ngoại hình, trang phục nhưng customize theo phong cách: Anime Nhật Bản hiện đại (Modern Anime Style), 2D hoặc 2.5D.
+
+Màu sắc: Tươi sáng, rực rỡ (vibrant), độ bão hòa cao. Ánh sáng lung linh, có hiệu ứng bloom, lens flare.
+
+Kỹ thuật: Nét vẽ sắc sảo (clean lines), đổ bóng cel-shading hoặc soft-shading tinh tế.
+
+Chi tiết nhân vật: [CHARACTER_STYLE] + Màu da: Trắng sáng, hồng hào đặc trưng của anime. + Phong cách trang phục: Vẽ chi tiết, có nếp gấp vải rõ ràng. + Phong cách vẽ mặt nhân vật: Mắt to, long lanh, biểu cảm phong phú, đặc trưng anime.
+
+Bối cảnh của phân cảnh là [A]
+
+HƯỚNG DẪN ĐẦU RA: Không viết bất kỳ văn bản, tiêu đề hay mô tả nào. Toàn bộ phản hồi của bạn phải chỉ là hình ảnh được tạo ra.`
   }
 ];
 
